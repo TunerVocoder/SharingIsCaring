@@ -1,0 +1,53 @@
+body
+{
+    background: url(DiagBackground.png);
+}
+
+nav
+{
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    background: white;
+    border: 2px solid white;
+    border-radius: 16px;
+    transition: 1.5s ease;
+    overflow: hidden;
+    width: 32px;
+    height: 32px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.dot
+{
+    float: right;
+    background: black;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+nav:hover
+{
+    width: 500px;
+    transition: 0.3s ease;
+}
+
+nav .items
+{
+    display: inline-table;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+nav:hover .items
+{
+    opacity: 1.0;
+}
+
+nav .items .itemLink
+{
+    display: table-cell;
+}
